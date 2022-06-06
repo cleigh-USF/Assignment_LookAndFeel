@@ -1,11 +1,18 @@
 /**
 Sample css code
 */
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
+
+/*Basic Padding and text sizing*/
 html {
-  height: 100%;
+    color: #222;
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
+  line-height: 1.5rem;
+  font-size: 24px;
 }
+
+
 
 /* Top Navigation Bar*/
 
@@ -71,3 +78,4 @@ html {
   color: red;
   text-decoration: none;
 }
+
