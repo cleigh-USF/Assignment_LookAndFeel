@@ -1,8 +1,8 @@
 /**
 Happy Hour Theme
 */
-
-
+/*Imports*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400|Halant:600');
 
 /*Variables for use in the 5 o'clock App*/
 :root{
@@ -74,7 +74,7 @@ Happy Hour Theme
 }
 
 body {
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
 }
 
 *,::after,::before{
@@ -86,7 +86,7 @@ body {
 Varibles added manually.
 
 */
-@import url('https://fonts.googleapis.com/css?family=Nunito:400|Halant:600');
+
 
 html {font-size: 112.5%;} /*18px*/
 
@@ -137,8 +137,26 @@ a{
 ul{
     list-style-type: none;
     list-padding: 0;
+    margin:0;
     color: var(--5o-primary-300)
 }
+
+/*Titles*/
+.title{
+    text-align: center;
+}
+
+.title h2{
+    margin-bottom: 0;
+}
+
+.title-underline{
+    background: var(--5o-primary-500);
+    width: 10rem;
+    height: 0.25rem;
+    margin: 0 auto;
+}
+
 
 /*Containers and Layout*/
 .container{
@@ -188,7 +206,6 @@ ul{
 }
 
 /*Alerts*/
-
 .alert{
     padding: var(--padding-1);
     margin-bottom: 1rem;
@@ -205,8 +222,8 @@ ul{
     color: var(--green-dark);
     background: var(--green-light);
 }
-/*Forms*/
 
+/*Forms*/
 .form{
     width: 90vw;
     max-width: var(--fixed-width);
@@ -250,6 +267,32 @@ ul{
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
 }
+
+
+/*Loading spinner - can be used for page transitions in final application*/
+
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.loading{
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid var(--5o-grey-300);
+    border-radius: 50%;
+    border-top-color: var(--primary-500);
+    animation: spinner 0.6s linear infinite;
+}
+
+/*Navigation Bar*/
+
+.li-nav{
+    display: inline;
+}
+
 
 
 /* Top Navigation Bar*/
