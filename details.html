@@ -6,14 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <title>Assignment - 3</title>
+    <title>Assignment - 3 - Happy Hour App Default Styles</title>
 </head>
 
 <body>
 <!--    Details page for a single Happy Hour-->
+<ul class="ul-nav">
+    <li class="li-nav"><a href="#Home">Home</a></li>
+    <li class="li-nav"><a href="#About">About Us</a></li>
+    <li class="li-nav"><a href="#TopRated">Top Rated</a></li>
+    <li class="li-nav"><a href="#FindHappyHour">Find a Happy Hour</a></li>
+</ul>
+
+<div class="title">
+    <h2>Section Title</h2>
+    <div class="title-underline"></div>
+</div>
+
+<form class="form">
+    <h4>Submit Happy Hour</h4>
+    <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" type="text" placeholder="It's 5 o'clock somewhere"
+        class="form-input">
+        <small class="form-alert"></small>
+    </div>
+        <div class="form-row">
+        <label for="number" class="form-label">Number</label>
+        <input id="number" type="number" placeholder=420
+        class="form-input">
+    </div>
+        <div class="form-row">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" type="email" placeholder="<input_group_name>@usf.edu"
+        class="form-input">
+    </div>
+        <div class="form-row">
+        <label for="textarea" class="form-label">Text Area</label>
+            <textarea id="textarea" class="form-textarea" placeholder="Placeholder Text"></textarea>
+    </div>
+    <button type=submit class="btn btn-block">Submit</button>
+</form>
+
 <h1>
-    Hello World!
+    H1 Hello Happy Hour - Use me for major headers within a body!
 </h1>
+
+<p>Default text type - use this for any text content.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem fugit molestias nemo unde. Autem corporis eligendi enim esse excepturi, iure laborum molestias neque nihil quibusdam quis reiciendis saepe voluptatem.</p>
+
+<h4>
+    H4 Happy Hour! - Use me for sub-headers within a body
+</h4>
+
+<a href="#">Happy Hour Styled Link</a>
+<ul>
+    <li>First Drink In List</li>
+    <li>Second Drink In List</li>
+    <li>Third Drink In List</li>
+</ul>
+
+<div class="container">
+    <img src="img/beer.png" alt="beer" class="img"/>
+</div>
+<br>
+<button class="btn" type="button">5'oclock Primary Button</button>
+<br>
+<br>
+<button class="btn btn-styled" type="button">5'oclock Styled Button</button>
+<br>
+<br>
+<div class="alert alert-danger">Hello Danger Alert!</div>
+<div class="alert alert-success">Hello Success Alert!</div>
+
+
+    <div class="loading"></div>
+
+<br>
+<br>
+
+
     <!--JS link-->
     <script src="./js/main.js"></script>
 </body>

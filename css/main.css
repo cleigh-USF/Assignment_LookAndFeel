@@ -52,7 +52,7 @@ Happy Hour Theme
       --green-dark: #0f5132;
 
 /*    Abstraction of color shades for readability*/
-    --backgroundColor: var(--5o-grey-100);
+    --backgroundColor: var(--5o-grey-300);
     --textColor: var(--5o-grey-800);
 
     /*Other handy variables*/
@@ -132,6 +132,7 @@ a{
     text-decoration: none;
     color: var(--5o-primary-500);
     font-style: italic;
+
 }
 
 ul{
@@ -143,7 +144,7 @@ ul{
 
 /*Titles*/
 .title{
-    text-align: center;
+    text-align: left;
 }
 
 .title h2{
@@ -291,8 +292,19 @@ ul{
 
 .li-nav{
     display: inline;
+    /*float: left;*/
+    padding: var(--padding-1);
+    background: var(--5o-light-blue-dark);
 }
 
+.li-nav:hover{
+    background: var(--5o-light-blue);
+}
+
+.ul-nav{
+    padding: var(--padding-1);
+    margin: 0 0 2rem;
+}
 
 
 /* Top Navigation Bar*/
